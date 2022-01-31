@@ -28,6 +28,9 @@ body {
   bottom: 50px;
   box-sizing: content-box;
 }
+.down-resume {
+  color: black;
+}
 @media (min-width: 992px) {
   .content-body {
     -webkit-overflow-scrolling: touch;
@@ -124,11 +127,10 @@ a:hover{
   background: #f2f2f2;
 }
 .itsme {
-  background: #ffdb43;
   display: inline-block;
   font-weight: 700;
   padding: 2px 10px;
-  color: #000000;
+  color: #ffdb43;
   margin-bottom: 2px;
 }
 @keyframes move {
@@ -153,7 +155,7 @@ a:hover{
   color: #ffffff;
 }
 .dark-page .page-loader .itsme {
-  color: #000000;
+  color: #ffdb43;
 }
 .dark-page .page-loader .anim-pg {
   background: #000000;
@@ -592,11 +594,11 @@ button:focus {
   float: left;
   font-weight: 700;
   border: 0;
-  color: #000000;
+  color: white;
   padding: 3px 10px;
   margin-left: 30px;
   margin-top: 10px;
-  background-color: #ffdb43;
+  background-color: transparent;
 }
 .main-header .main-nav {
   margin: 0;
@@ -2524,4 +2526,14 @@ uncomment this part if you haven't added this code anywhere else
   display: table-cell;
   vertical-align: middle;
   text-align: center;
+}
+.download-but {
+  background-color: #ffdb43;
+  border: 1px solid #ffdb43;
+}
+.download-but::before {
+  background-color: white;
+}
+.download-but:hover {
+  border: 1px solid white;
 }
